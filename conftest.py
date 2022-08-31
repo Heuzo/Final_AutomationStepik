@@ -20,6 +20,6 @@ def browser(request):
         browser = webdriver.Chrome(options=options)
     else:
         raise pytest.UsageError("--language should be en or ru")
-    browser.implicitly_wait(10)
+    browser.implicitly_wait(5)
     yield browser
     browser.quit()
