@@ -9,3 +9,10 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.XPATH, '//form[@id="login_form"]')
     REGISTER_FORM = (By.XPATH, '//form[@id="register_form"]')
+
+
+class ProductPageLocators:
+    ITEM_ADDED_SUCCESS_MSG = (By.XPATH, '//div[@class="alertinner " and ./strong]')
+    ITEM_NAME = (By.XPATH, '//div[@class="col-sm-6 product_main"]/h1')
+    ITEM_PRICE = (By.XPATH, '//div[@class="col-sm-6 product_main"]/p[@class="price_color"]')
+    BASKET_PRICE = (By.XPATH, '//div[@class="alertinner "]/p/strong')
