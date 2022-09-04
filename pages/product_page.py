@@ -34,3 +34,8 @@ class ProductPage(BasePage):
 
     def is_prices_correct(self, price_book, price_basket):
         assert price_book == price_basket, 'Цена книги и цена корзины не совпадают'
+
+    def get_book_info(self):
+        price = self.get_item_price()
+        book =  self.get_item_name()
+        return price, book
